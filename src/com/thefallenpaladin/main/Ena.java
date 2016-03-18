@@ -1,11 +1,11 @@
-package com.thefallenpaladin.main;
-
+//Because Science
 /**
- * Created by Matthew on 3/15/2016.
+ * Created by Matthew && HerbGlitch on 3/15/2016.
  * Made in order to assist
- * P. E.N.A is v.0.1
+ * E.N.A is v.0.1
  * an variable that starts with 'a' is an admin command
  */
+package com.thefallenpaladin.main;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -13,37 +13,44 @@ import java.util.Scanner;
 import java.awt.Desktop;
 import java.net.URI;
 
-public class Main {
+public class Ena {
 
-    //Input Variables
+    /**BTW got quitting working */
+    //Input Variables //nice
     Scanner userInput = new Scanner(System.in);
 
-    //IDs
+    //IDs //got them working
     String[] userPass = {"Pass1"};
-    String[] adminPass = {"Command"};
+    String[] adminPass = {"Command", "ninja242424"};
 
     //Booleans
     boolean mAccess = false;
     boolean tAccess = false;
-    boolean mattAcess = false; // not used.
-    boolean nExiting = true;
+    boolean mattAcess = false; // WOW... REAL MATURE
+    boolean nExiting = true; //what is this for?
     boolean firstTimeRun = true;
-    boolean quiting = false; //TODO Get the program to quit when 'quit is typed.'
+    boolean StartoutExplain = false;// same as firstTimeRun, except for mAccess
 
-    //Ints
+    //Ints //Why no ints?
 
     //Double
-    double enaCurrentVersion = 0.2;
+    double enaCurrentVersion = 0.3; //TODO Update if you create a substantial update
+
+    //Static Variables
+    private static int User_number = 0;
 
 
     public static void main(String[] args) {
-        Main main = new Main();
-        main.password();
-        while(true) {
-            main.mLoop();
-            if(main.quiting) {
-                break;
-            }
+        User_number++;
+        //Todo find out if this works
+        if(User_number < 5) {
+            //System.out.println(User_number);
+            Ena ena = new Ena();
+            ena.password();
+            ena.mLoop();
+        }
+        else{
+            System.out.println("You have too many Instances of Me open, please close one to open another");
         }
     }
 
@@ -57,7 +64,9 @@ public class Main {
                     mAccess = true;
                     break;
                 }
-                else if(passCheck.equals(adminPass[i])) {
+            }
+            for (int i = 0; i < adminPass.length; i++) {
+                if(passCheck.equals(adminPass[i])) {
                     tAccess = true;
                     break;
                 }
@@ -73,11 +82,17 @@ public class Main {
     public void mLoop() { // This is the main loop
 
         while(mAccess) {
-            System.out.println("Hello, My name is Ena.");
-            System.out.println("How can I help you?");
+
+            if(StartoutExplain) {
+                System.out.println("Hello, My name is Ena.");
+                StartoutExplain = false;
+            }
+            System.out.println("How can I help you: ");
             String command = userInput.nextLine();
             if(command.equals("quit")) {
                 System.out.println("Thank you, and goodbye.");
+                mAccess = false;
+                break;
             }
         }
         while(tAccess) {
@@ -85,7 +100,7 @@ public class Main {
                 System.out.println("Hello, My name is Ena.");
                 System.out.println("Type \"help\" for help");
                 System.out.println("I have detected that you are an admin. Welcome.");
-                System.out.println("How can I help you?");
+                System.out.println("How can I help you: ");
                 firstTimeRun = false;
             } else {
                 System.out.println("Anything else?: ");
@@ -93,7 +108,8 @@ public class Main {
             String aCommand = userInput.nextLine().toLowerCase();
             if(aCommand.equals("quit")) {
                 System.out.println("Thank you, and goodbye");
-                quiting = true;
+                tAccess = false;
+                break;
             }
             else if(aCommand.equals("open browser")) {
                 if(Desktop.isDesktopSupported()) {
