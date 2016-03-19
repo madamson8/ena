@@ -20,12 +20,16 @@ public class Ena {
     Scanner userInput = new Scanner(System.in);
 
     //IDs //got them working
+    String[] userName = {"basicUser1"};
+    String[] aUserName = {"thefallepaladin", "madamson8"};
     String[] userPass = {"Pass1"};
     String[] adminPass = {"Command", "ninja242424"};
 
     //Booleans
     boolean mAccess = false;
     boolean tAccess = false;
+    boolean mAccess2 = false;
+    boolean tAccess2 = false;
     boolean mattAcess = false; // WOW... REAL MATURE
     boolean nExiting = true; //what is this for?
     boolean firstTimeRun = true;
@@ -56,7 +60,24 @@ public class Ena {
 
     public void password() { // A simple password method.
         int passTimesTried = 0;
-        System.out.print("Password?: ");
+//        System.out.print("Username?: "); //Beginning of username enter //TODO!!!!!!!!!!
+//        String userCheck = userInput.nextLine();
+//        while (passTimesTried < 1) {
+//            for(int i = 0; i < userName.length; i++) {
+//                if(userCheck.equals(userName[i])) {
+//                    mAccess2 = true;
+//                    break;
+//                }
+//            }
+//            for(int i = 0; i < aUserName.length; i++) {
+//                if(userCheck.equals(userPass[i])) {
+//                    tAccess2 = true;
+//                    break;
+//                }
+//            }
+//        }
+
+        System.out.print("Password?: "); //Beginning of password enter
         String passCheck = userInput.nextLine();
         while(passTimesTried < 1) {
             for(int i = 0; i < userPass.length; i++) {
