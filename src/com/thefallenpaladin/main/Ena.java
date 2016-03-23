@@ -17,7 +17,7 @@ public class Ena {
 
     /**BTW got quitting working */
     //Input Variables //nice
-    Scanner userInput = new Scanner(System.in);
+    private Scanner userInput = new Scanner(System.in);
 
     //IDs //got them working
     String[] userName = {"basicUser1"};
@@ -38,13 +38,14 @@ public class Ena {
     //Ints //Why no ints?
 
     //Double
-    double enaCurrentVersion = 0.3; //TODO Update if you create a substantial update
+    double enaCurrentVersion = 0.4; //TODO Update if you create a substantial update
 
     //Static Variables
     private static int User_number = 0;
 
     //Class
     Calculator calc = new Calculator();
+    EnaGames enaGames = new EnaGames();
 
     public static void main(String[] args) {
         User_number++;
@@ -193,6 +194,14 @@ public class Ena {
                 System.out.println("Type \"Open Browser\" To open the default browser.");
                 System.out.println("Type \"check version\" to check your current version. ");
                 System.out.println("Type \"credits\" To view the credits.");
+                System.out.println("Type \"Calculator\" To access the calculator");
+                System.out.println("Type \"Hangman\" to play Hangman");
+                System.out.println("Type \"rps\" to play Rock Paper Scissors");
+            } else if(aCommand.equals("rps")) {
+                enaGames.RockPaperScissors();
+            }
+            else if(aCommand.equals("hangman")) {
+                enaGames.Hangman();
             } else {
                 System.out.println("Invalid Input");
             }
