@@ -150,12 +150,37 @@ public class Ena {
             else if(aCommand.equals("check version")) {
                 System.out.println("My current version is: " + enaCurrentVersion);
             } else if(aCommand.equals("calculator")) {
+                System.out.println("Please type calculator and then whatever calculation you want to peform. \n EX. calculator add");
+            } else if(aCommand.equals("calculator add")) {
                 System.out.println("First number?: ");
-                double f_num = userInput.nextDouble();
+                double f_num = userInput.nextDouble(); //Snake case used to add readability.
                 System.out.println("Second number?: ");
                 double s_num = userInput.nextDouble();
                 double addAnswer = calc.addition(f_num,s_num);
                 System.out.println("The answer is: " + addAnswer);
+            } else if(aCommand.equals("calculator times")) {
+                System.out.println("First number?: ");
+                double f_num = userInput.nextDouble();
+                System.out.println("Second number?: ");
+                double s_num = userInput.nextDouble();
+                double multAnswer = calc.multiplication(f_num,s_num);
+                System.out.println("The answer is: " + multAnswer);
+            }
+            else if(aCommand.equals("calculator subtract")) {
+                System.out.println("First number?: ");
+                double f_num = userInput.nextDouble();
+                System.out.println("Second number?: ");
+                double s_num = userInput.nextDouble();
+                double subAnswer = calc.subtraction(f_num,s_num);
+                System.out.println(subAnswer);
+            }
+            else if(aCommand.equals("calculator divide")) {
+                System.out.println("First number?: ");
+                double f_num = userInput.nextDouble();
+                System.out.println("Second number?: ");
+                double s_num = userInput.nextDouble();
+                double divAnswer = calc.division(f_num,s_num);
+                System.out.println(divAnswer);
             }
             else if(aCommand.equals("credits")) {
                 System.out.println("Huge thanks to the main programmers,\n" +
@@ -168,6 +193,8 @@ public class Ena {
                 System.out.println("Type \"Open Browser\" To open the default browser.");
                 System.out.println("Type \"check version\" to check your current version. ");
                 System.out.println("Type \"credits\" To view the credits.");
+            } else {
+                System.out.println("Invalid Input");
             }
         }
     }
