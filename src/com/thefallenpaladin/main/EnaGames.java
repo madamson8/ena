@@ -27,8 +27,8 @@ public class EnaGames {
             }
         }
     }
-    public void RockPaperScissors() {
-        boolean playerWon = false;
+    public void RockPaperScissors() { //TODO Get it so that it gets a random number every time that you play a new game of rps
+        boolean playerWon = false; //TODO in the same run.
         boolean compWon = false;
         System.out.println("Rock, Paper, or Scissors?");
         String rpsCheck = userInput.nextLine().toLowerCase();

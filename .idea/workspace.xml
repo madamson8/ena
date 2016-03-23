@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b77b3cf6-eab1-4278-a3ae-0375fb62d5d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/P.Ena/com/thefallenpaladin/main/EnaGames.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/thefallenpaladin/main/EnaGames.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/P.Ena/com/thefallenpaladin/main/Ena.class" afterPath="$PROJECT_DIR$/out/production/P.Ena/com/thefallenpaladin/main/Ena.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thefallenpaladin/main/Ena.java" afterPath="$PROJECT_DIR$/src/com/thefallenpaladin/main/Ena.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thefallenpaladin/main/EnaGames.java" afterPath="$PROJECT_DIR$/src/com/thefallenpaladin/main/EnaGames.java" />
     </list>
     <ignored path="P.Ena.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Ena.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ena.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/thefallenpaladin/main/Ena.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53424656">
-              <caret line="200" column="45" selection-start-line="200" selection-start-column="45" selection-end-line="200" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="189" column="13" selection-start-line="189" selection-start-column="13" selection-end-line="189" selection-end-column="13" />
               <folding>
                 <element signature="e#0#8278#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -41,24 +37,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnaGames.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EnaGames.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/thefallenpaladin/main/EnaGames.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.586207">
-              <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.10119048">
+              <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Random.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/Random.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="160" column="32" selection-start-line="160" selection-start-column="32" selection-end-line="160" selection-end-column="32" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -85,8 +71,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/thefallenpaladin/main/Main.java" />
         <option value="$PROJECT_DIR$/src/com/thefallenpaladin/main/Calculator.java" />
-        <option value="$PROJECT_DIR$/src/com/thefallenpaladin/main/EnaGames.java" />
         <option value="$PROJECT_DIR$/src/com/thefallenpaladin/main/Ena.java" />
+        <option value="$PROJECT_DIR$/src/com/thefallenpaladin/main/EnaGames.java" />
       </list>
     </option>
   </component>
@@ -479,7 +465,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1292" height="696" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -488,7 +474,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5031348" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32935154" sideWeight="0.4968652" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32935154" sideWeight="0.4968652" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -604,22 +590,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thefallenpaladin/main/EnaGames.java">
+    <entry file="file://$PROJECT_DIR$/src/com/thefallenpaladin/main/Ena.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.586207">
-          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="189" column="13" selection-start-line="189" selection-start-column="13" selection-end-line="189" selection-end-column="13" />
           <folding>
+            <element signature="e#0#8278#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thefallenpaladin/main/Ena.java">
+    <entry file="file://$PROJECT_DIR$/src/com/thefallenpaladin/main/EnaGames.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53424656">
-          <caret line="200" column="45" selection-start-line="200" selection-start-column="45" selection-end-line="200" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.10119048">
+          <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
           <folding>
-            <element signature="e#0#8278#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
