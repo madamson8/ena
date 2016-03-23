@@ -43,6 +43,8 @@ public class Ena {
     //Static Variables
     private static int User_number = 0;
 
+    //Class
+    Calculator calc = new Calculator();
 
     public static void main(String[] args) {
         User_number++;
@@ -138,7 +140,6 @@ public class Ena {
                         Desktop.getDesktop().browse(new URI(
                                 "http://www.google.com"
                         ));
-                        System.out.println("Alright. Anything else?: ");
                     } catch (IOException e) {
                         e.printStackTrace();
                     } catch (URISyntaxException e) {
@@ -148,6 +149,13 @@ public class Ena {
             }
             else if(aCommand.equals("check version")) {
                 System.out.println("My current version is: " + enaCurrentVersion);
+            } else if(aCommand.equals("calculator")) {
+                System.out.println("First number?: ");
+                double f_num = userInput.nextDouble();
+                System.out.println("Second number?: ");
+                double s_num = userInput.nextDouble();
+                double addAnswer = calc.addition(f_num,s_num);
+                System.out.println("The answer is: " + addAnswer);
             }
             else if(aCommand.equals("credits")) {
                 System.out.println("Huge thanks to the main programmers,\n" +
