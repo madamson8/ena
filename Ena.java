@@ -149,10 +149,9 @@ public class Ena {
             }
             else if(aCommand.equals("check version")) {
                 System.out.println("My current version is: " + enaCurrentVersion);
-            } else if(aCommand.equals("calculator") || aCommand.equals("calculator add") ||
-                    aCommand.equals("calculator times") || aCommand.equals("calculator subtract") ||
-                    aCommand.equals("calculator divide")){
-                calc.calculatorPerformed(aCommand);
+            } else if(aCommand.equals("calculator") || aCommand.equals("calc"){
+                Calculator c = new Calculator;
+                c.main();
             }
             else if(aCommand.equals("credits")) {
                 System.out.println("Huge thanks to the main programmers,\n" +
